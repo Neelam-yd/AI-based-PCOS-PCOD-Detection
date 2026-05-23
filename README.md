@@ -1,7 +1,4 @@
 # PCOS / PCOD AI Detection System
-### B.Tech CSE Final Year Project
-
----
 
 ## SETUP ON WINDOWS LAPTOP (Step-by-Step)
 
@@ -81,37 +78,6 @@ Your website is now running! ✅
 
 ---
 
-## HOW TO GET THE FREE API KEY (for Chatbot)
-
-1. Go to: **https://console.anthropic.com**
-2. Click **Sign Up** → create account with email or Google
-3. Verify your phone number (required)
-4. On the left sidebar → click **API Keys**
-5. Click **+ Create Key**
-6. Give it any name (e.g., "pcos-project")
-7. **Copy the key** (starts with `sk-ant-api03-...`)
-8. Anthropic gives **$5 free credits** on signup
-
-When you open the Chatbot page at http://localhost:3000/chatbot, it will show a setup screen where you paste the key. Done!
-
----
-
-## HOW TO STOP THE SERVER
-
-In Command Prompt: press **Ctrl + C** then type `Y` and Enter.
-
----
-
-## HOW TO RESTART NEXT TIME
-
-```
-cd C:\Users\YourName\Desktop\pcos-detection
-npm run dev
-```
-Then open http://localhost:3000
-
----
-
 ## PROJECT STRUCTURE
 
 ```
@@ -131,9 +97,7 @@ pcos-detection/
 ├── tailwind.config.js
 ├── next.config.js
 └── postcss.config.js
-```
 
----
 
 ## COMMON ERRORS & FIXES
 
@@ -145,16 +109,4 @@ pcos-detection/
 | Page shows blank | Hard refresh: Ctrl+Shift+R |
 | node_modules missing | Run `npm install` |
 
----
 
-## VIVA TALKING POINTS
-
-- **Frontend:** Next.js 14 with App Router + Tailwind CSS
-- **Chatbot AI:** Claude claude-sonnet-4-20250514 via Anthropic API (real AI responses)
-- **Detection:** Prototype with mock results — production would use a CNN (ResNet-50/VGG) trained on ovarian ultrasound dataset
-- **Architecture:** Client-side React, file-based routing, component-based design
-- **Design:** Responsive, dark theme, glassmorphism, mobile-friendly navbar
-
----
-
-*B.Tech CSE Final Year Project*
