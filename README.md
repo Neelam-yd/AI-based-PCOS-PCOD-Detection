@@ -1,112 +1,188 @@
-# PCOS / PCOD AI Detection System
+<img width="1225" height="807" alt="image" src="https://github.com/user-attachments/assets/e9d08f1d-171b-4cd7-9ee2-2d29158fcbd0" /># AI-Based PCOS/PCOD Detection System
 
-## SETUP ON WINDOWS LAPTOP (Step-by-Step)
-
----
-
-### STEP 1 — Install Node.js
-
-1. Open browser → go to https://nodejs.org
-2. Download the **LTS** version (big green button)
-3. Open the downloaded `.msi` file → Click Next → Next → Install → Finish
-4. Restart your laptop after install
-5. To verify: press **Win+R** → type `cmd` → Enter
-6. Type `node -v` → should show v18 or v20
-7. Type `npm -v`  → should show a version number
+An intelligent healthcare web application designed to assist in the early detection of PCOS (Polycystic Ovary Syndrome) using AI-powered analysis of symptoms and ultrasound images.
 
 ---
 
-### STEP 2 — Extract the Project
+## Overview
 
-1. Right-click `pcos-detection.zip` → Extract All
-2. Put the extracted folder on your Desktop
+PCOS is one of the most common hormonal disorders affecting women, and early diagnosis is often delayed. This project aims to provide a smart and user-friendly platform that helps users understand possible PCOS symptoms through AI-based prediction and analysis.
 
----
-
-### STEP 3 — Open Command Prompt in the Project Folder
-
-Option A (easy):
-1. Open the `pcos-detection` folder
-2. Click on the address bar at the top
-3. Type `cmd` and press Enter → Command Prompt opens inside the folder
-
-Option B:
-1. Press Win+R → type `cmd` → Enter
-2. Type: `cd C:\Users\YourName\Desktop\pcos-detection`
+The application combines modern web technologies with machine learning concepts to create an accessible healthcare solution.
 
 ---
 
-### STEP 4 — Install Dependencies
+## Features
 
-In Command Prompt, type:
-```
-npm install
-```
-Wait 1–2 minutes. A `node_modules` folder will appear.
-
----
-
-### STEP 5 — Run the Project
-
-```
-npm run dev
-```
-
-You will see:
-```
-▲ Next.js 14.2.3
-- Local:  http://localhost:3000
-```
+- AI-based PCOS prediction
+- Symptom analysis system
+- Ultrasound image-based detection
+- Interactive chatbot support
+- Responsive and modern UI
+- Fast and user-friendly experience
+- Secure handling of user input
+- Real-time prediction workflow
 
 ---
 
-### STEP 6 — Open in Browser
+## Tech Stack
 
-Go to: **http://localhost:3000**
+### Frontend
+- Next.js
+- React.js
+- Tailwind CSS
 
-Your website is now running! ✅
+### Backend
+- Node.js
+- API Routes (Next.js)
+
+### AI / ML
+- Python
+- TensorFlow / Scikit-learn
+
+### Deployment
+- Vercel
 
 ---
 
-## PAGES
+## Project Structure
 
-| Page | URL |
-|------|-----|
-| Home Page | http://localhost:3000 |
-| Image Detection | http://localhost:3000/detection |
-| AI Chatbot | http://localhost:3000/chatbot |
-
----
-
-## PROJECT STRUCTURE
-
-```
+```bash
 pcos-detection/
+│
+├── public/
 ├── src/
 │   ├── app/
-│   │   ├── layout.js          ← Root layout (Navbar lives here, shows on all pages)
-│   │   ├── page.js            ← Home page
-│   │   ├── globals.css        ← Global styles
-│   │   ├── detection/
-│   │   │   └── page.js        ← Image upload & AI analysis
-│   │   └── chatbot/
-│   │       └── page.js        ← AI chatbot with Claude API
-│   └── components/
-│       └── Navbar.js          ← Navigation bar component
+│   ├── components/
+│   ├── api/
+│
 ├── package.json
 ├── tailwind.config.js
 ├── next.config.js
-└── postcss.config.js
+└── README.md
+```
+
+---
+
+## Installation & Setup
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/pcos-detection-ai.git
+```
+
+---
+
+### 2. Navigate into the Project Folder
+
+```bash
+cd pcos-detection-ai
+```
+
+---
+
+### 3. Install Dependencies
+
+```bash
+npm install
+```
+
+---
+
+### 4. Run Development Server
+
+```bash
+npm run dev
+```
+
+---
+
+### 5. Open in Browser
+
+```text
+http://localhost:3000
+```
+
+---
+
+## Screenshots
+
+Add your project screenshots here after deployment.
+
+Example:
+
+- Home Page
+- Detection Page
+- Chatbot Interface
+- Prediction Results
+
+---
+
+## Objectives
+
+- Help in early PCOS awareness
+- Reduce delayed diagnosis
+- Provide accessible healthcare support
+- Use AI for better prediction assistance
+- Create an easy-to-use medical support platform
+
+---
+
+## Future Enhancements
+
+- Doctor consultation integration
+- User authentication system
+- Patient report generation
+- Cloud database integration
+- Advanced deep learning models
+- Medical dashboard for doctors
+- Multilingual support
+
+---
+
+## Challenges Faced
+
+- Integrating AI workflow with frontend
+- Managing medical prediction accuracy
+- Building responsive healthcare UI
+- Handling image uploads efficiently
+
+---
+
+## Learning Outcomes
+
+Through this project, we gained experience in:
+
+- Full Stack Development
+- API Integration
+- AI/ML Implementation
+- Next.js Application Structure
+- Responsive UI Design
+- Real-world Healthcare Problem Solving
+
+---
+
+## Contributors
+
+- Neelam Yadav
+
+---
+
+## Deployment
+
+Live Project:
+
+```text
+https://ai-based-pcos-pcod-detection.vercel.app/
+```
+
+---
+<img width="1225" height="807" alt="image" src="https://github.com/user-attachments/assets/af78b583-0d14-4cee-93f2-28a35cca803c" />
 
 
-## COMMON ERRORS & FIXES
+## License
 
-| Error | Fix |
-|-------|-----|
-| 'next' is not recognized | Run `npm install` again |
-| Port 3000 already in use | Run `npm run dev -- -p 3001` and open http://localhost:3001 |
-| Chatbot API error | Check the API key is correct and starts with `sk-ant-` |
-| Page shows blank | Hard refresh: Ctrl+Shift+R |
-| node_modules missing | Run `npm install` |
+This project is developed for educational, research, and innovation purposes.
 
-
+---
